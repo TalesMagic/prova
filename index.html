@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pizzaria Imperial🍕😋</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo">Pizzaria Imperial🍕😋</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Nossos clientes</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Sabor</th>
+							<th>Data</th>
+							<th>Hora</th>
+							<th>Status de entrega</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pedidos">
+						<tr class="cliente 1" id="primeiro-cliente">
+							<td class="info-nome">Paulo</td>
+							<td class="info-sabor">Quatro queijos</td>
+							<td class="info-data">14/02/2023</td>
+							<td class="info-hora">19:30</td>
+							<td class="info-status">entregue</td>
+						</tr>
+
+						<tr class="cliente">
+							<td class="info-nome">Franky</td>
+							<td class="info-sabor">Calabresa</td>
+							<td class="info-data">12/02/2023</td>
+							<td class="info-hora">18:40</td>
+							<td class="info-status">entregue</td>
+						</tr>
+
+						<tr class="cliente">
+							<td class="info-nome">Robin</td>
+							<td class="info-sabor">Portuguesa</td>
+							<td class="info-data">10/02/2023</td>
+							<td class="info-hora">20:35</td>
+							<td class="info-status">entregue</td>
+						</tr>
+
+						<tr class="cliente">
+							<td class="info-nome">Brook</td>
+							<td class="info-sabor">Muçarela</td>
+							<td class="info-data">23/02/2023</td>
+							<td class="info-hora">21:14</td>
+							<td class="info-status">entregue</td>
+						</tr>
+
+						
+					</tbody>
+				</table>
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar novo pedido</h2>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="nome">Nome:</label>
+		            <input id="nome" name="nome" type="text" placeholder="digite o seu nome" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="sabor">Sabor:</label>
+		            <input id="sabor" name="sabor" type="text" placeholder="digite o sabor da pizza" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="data">Data:</label>
+		            <input id="data" name="data" type="date" placeholder="digite a data do seu pedido" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="hora">Hora:</label>
+		            <input id="hora" type="time" placeholder="digite a hora do seu pedido" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-pedido" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+
+        <script src="js/remover.js"></script>
+		<script src="js/form.js"></script>
+
+
+	</body>
+</html>
